@@ -11,6 +11,10 @@
     department: string;
   };
 
+  type Mentors1 = {
+    name: string[];
+  };
+
   interface User2 {
     name: string;
     roll: number;
@@ -18,6 +22,10 @@
 
   interface UserWithDepartment2 extends User2 {
     department: string;
+  }
+
+  interface Mentors2 {
+    [index: number]: string;
   }
 
   const user1: UserWithDepartment1 = {
