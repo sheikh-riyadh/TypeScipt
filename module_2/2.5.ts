@@ -41,4 +41,14 @@
   };
 
   const result7 = createTupleWithGeneric<string, number>("Riyadh", 350883);
+
+  type CreateArray<T> = (param: T) => T[];
+
+  const createArrayWithGenericType: CreateArray<string> = (param) => {
+    return [param];
+  };
+
+  const createArrayWithGenericType2: CreateArray<number> = (param) => {
+    return [param];
+  };
 }
